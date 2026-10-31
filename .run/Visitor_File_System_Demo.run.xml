@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Visitor File System Demo" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="edu.aitu.visitor.client.FileSystemDemo" />
+    <module name="visitor-file-system" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <method v="2"><option name="Make" enabled="true" /></method>
+  </configuration>
+</component>
