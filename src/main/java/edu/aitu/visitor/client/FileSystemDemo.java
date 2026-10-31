@@ -6,6 +6,7 @@ import edu.aitu.visitor.model.FileElement;
 import edu.aitu.visitor.model.FileSystemElement;
 import edu.aitu.visitor.operation.SearchVisitor;
 import edu.aitu.visitor.operation.SizeCalculatorVisitor;
+import edu.aitu.visitor.operation.TextExportVisitor;
 import edu.aitu.visitor.traversal.FileSystemWalker;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -23,9 +24,10 @@ public final class FileSystemDemo {
         DirectoryElement root = createSampleTree();
         showSize(root);
         showSearch(root, ".txt");
+        showTextExport(root);
         showParallelAnalysis(root);
         System.out.println("\nDOUBLE DISPATCH");
-        System.out.println("1. The element chooses accept() using its actual type.");
+        System.out.println("1. walk() calls the actual element's accept(visitor).");
         System.out.println("2. accept() calls visitFile(this) or visitDirectory(this).");
         System.out.println("3. The actual visitor supplies the operation implementation.");
         System.out.println("\nAll operations used the same tree; the elements stayed unchanged.");
@@ -66,10 +68,20 @@ public final class FileSystemDemo {
 
     private static void showParallelAnalysis(FileSystemElement root)
             throws InterruptedException, ExecutionException {
-        System.out.println("\n3. INDEPENDENT PARALLEL VISITORS");
+        System.out.println("\n4. INDEPENDENT PARALLEL VISITORS");
         for (String result : ParallelAnalysis.analyze(root, ".txt")) {
             System.out.println(result);
         }
         System.out.println("Two tasks, separate visitors, one immutable sample tree.");
+    }
+
+    private static void showTextExport(FileSystemElement root) {
+        TextExportVisitor visitor = new TextExportVisitor();
+        FileSystemWalker.walk(root, visitor);
+        System.out.println("\n3. NEW OPERATION: TEXT EXPORT VISITOR");
+        System.out.println("This visitor was added without changing FileElement or DirectoryElement.");
+        for (String line : visitor.getLines()) {
+            System.out.println(line);
+        }
     }
 }

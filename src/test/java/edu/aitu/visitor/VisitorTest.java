@@ -6,6 +6,7 @@ import edu.aitu.visitor.model.FileElement;
 import edu.aitu.visitor.model.FileSystemElement;
 import edu.aitu.visitor.operation.SearchVisitor;
 import edu.aitu.visitor.operation.SizeCalculatorVisitor;
+import edu.aitu.visitor.operation.TextExportVisitor;
 import edu.aitu.visitor.traversal.FileSystemWalker;
 import java.util.ArrayList;
 import java.util.List;
@@ -136,6 +137,32 @@ class VisitorTest {
         SizeCalculatorVisitor visitor = new SizeCalculatorVisitor();
         sampleTree().accept(visitor);
         assertEquals(0, visitor.getTotalBytes());
+    }
+
+    @Test
+    void exportContainsAllElements() {
+        TextExportVisitor visitor = new TextExportVisitor();
+        FileSystemWalker.walk(sampleTree(), visitor);
+        assertEquals(List.of(
+                "DIR coursework",
+                "FILE README.md (800 bytes)",
+                "DIR documents",
+                "FILE notes.txt (1200 bytes)",
+                "FILE report.pdf (4800 bytes)",
+                "FILE todo.txt (600 bytes)",
+                "DIR images",
+                "FILE diagram.png (2400 bytes)",
+                "FILE archive.zip (3200 bytes)"), visitor.getLines());
+    }
+
+    @Test
+    void exportResultsAreSnapshots() {
+        TextExportVisitor visitor = new TextExportVisitor();
+        new FileElement("first.txt", 1).accept(visitor);
+        List<String> snapshot = visitor.getLines();
+        new DirectoryElement("empty", List.of()).accept(visitor);
+        assertEquals(List.of("FILE first.txt (1 bytes)"), snapshot);
+        assertThrows(UnsupportedOperationException.class, () -> snapshot.add("extra"));
     }
 
     private static DirectoryElement sampleTree() {
