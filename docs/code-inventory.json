@@ -1,0 +1,1402 @@
+{
+  "classes": [
+    {
+      "name": "FileSystemDemo",
+      "kind": "CLASS",
+      "package": "edu.aitu.visitor.client",
+      "source": "src/main/java/edu/aitu/visitor/client/FileSystemDemo.java",
+      "modifiers": [
+        "public",
+        "final"
+      ],
+      "fields": [],
+      "methods": [
+        {
+          "name": "FileSystemDemo",
+          "constructor": true,
+          "returnType": null,
+          "modifiers": [
+            "private"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "main",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public",
+            "static"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "args",
+              "type": "String[]"
+            }
+          ],
+          "throws": [
+            "InterruptedException",
+            "ExecutionException"
+          ],
+          "locals": [
+            {
+              "name": "root",
+              "type": "DirectoryElement",
+              "line": 24
+            }
+          ]
+        },
+        {
+          "name": "createSampleTree",
+          "constructor": false,
+          "returnType": "DirectoryElement",
+          "modifiers": [
+            "private",
+            "static"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "showSize",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "private",
+            "static"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "root",
+              "type": "FileSystemElement"
+            }
+          ],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "SizeCalculatorVisitor",
+              "line": 50
+            }
+          ]
+        },
+        {
+          "name": "showSearch",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "private",
+            "static"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "root",
+              "type": "FileSystemElement"
+            },
+            {
+              "name": "suffix",
+              "type": "String"
+            }
+          ],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "SearchVisitor",
+              "line": 59
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "line": 63
+            }
+          ]
+        },
+        {
+          "name": "showParallelAnalysis",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "private",
+            "static"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "root",
+              "type": "FileSystemElement"
+            }
+          ],
+          "throws": [
+            "InterruptedException",
+            "ExecutionException"
+          ],
+          "locals": [
+            {
+              "name": "result",
+              "type": "String",
+              "line": 72
+            }
+          ]
+        },
+        {
+          "name": "showTextExport",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "private",
+            "static"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "root",
+              "type": "FileSystemElement"
+            }
+          ],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "TextExportVisitor",
+              "line": 79
+            },
+            {
+              "name": "line",
+              "type": "String",
+              "line": 83
+            }
+          ]
+        }
+      ],
+      "sha256": "8ddc377c257a80a2139e9858b5460abb1eb1bc705cd368ccd5458f79f7a061fa"
+    },
+    {
+      "name": "ParallelAnalysis",
+      "kind": "CLASS",
+      "package": "edu.aitu.visitor.concurrent",
+      "source": "src/main/java/edu/aitu/visitor/concurrent/ParallelAnalysis.java",
+      "modifiers": [
+        "public",
+        "final"
+      ],
+      "fields": [],
+      "methods": [
+        {
+          "name": "ParallelAnalysis",
+          "constructor": true,
+          "returnType": null,
+          "modifiers": [
+            "private"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "analyze",
+          "constructor": false,
+          "returnType": "List<String>",
+          "modifiers": [
+            "public",
+            "static"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "root",
+              "type": "FileSystemElement"
+            },
+            {
+              "name": "suffix",
+              "type": "String"
+            }
+          ],
+          "throws": [
+            "InterruptedException",
+            "ExecutionException"
+          ],
+          "locals": [
+            {
+              "name": "executor",
+              "type": "ExecutorService",
+              "line": 19
+            },
+            {
+              "name": "size",
+              "type": "Future<Long>",
+              "line": 21
+            },
+            {
+              "name": "visitor",
+              "type": "SizeCalculatorVisitor",
+              "line": 22
+            },
+            {
+              "name": "matches",
+              "type": "Future<List<String>>",
+              "line": 26
+            },
+            {
+              "name": "visitor",
+              "type": "SearchVisitor",
+              "line": 27
+            }
+          ]
+        }
+      ],
+      "sha256": "074253df850251315890f9acd64d9f5849348d922686deb90c9a36200aa5cd36"
+    },
+    {
+      "name": "DirectoryElement",
+      "kind": "CLASS",
+      "package": "edu.aitu.visitor.model",
+      "source": "src/main/java/edu/aitu/visitor/model/DirectoryElement.java",
+      "modifiers": [
+        "public",
+        "final"
+      ],
+      "fields": [
+        {
+          "name": "name",
+          "type": "String",
+          "modifiers": [
+            "private",
+            "final"
+          ],
+          "initializer": null
+        },
+        {
+          "name": "children",
+          "type": "List<FileSystemElement>",
+          "modifiers": [
+            "private",
+            "final"
+          ],
+          "initializer": null
+        }
+      ],
+      "methods": [
+        {
+          "name": "DirectoryElement",
+          "constructor": true,
+          "returnType": null,
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "name",
+              "type": "String"
+            },
+            {
+              "name": "children",
+              "type": "List<FileSystemElement>"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "getName",
+          "constructor": false,
+          "returnType": "String",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "getChildren",
+          "constructor": false,
+          "returnType": "List<FileSystemElement>",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "accept",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [
+            {
+              "name": "visitor",
+              "type": "FileSystemVisitor"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        }
+      ],
+      "sha256": "54e98f6af79323ed6324ce9c4e75a9970128a118faa4674ddf94c9d8ed1e0448"
+    },
+    {
+      "name": "FileElement",
+      "kind": "CLASS",
+      "package": "edu.aitu.visitor.model",
+      "source": "src/main/java/edu/aitu/visitor/model/FileElement.java",
+      "modifiers": [
+        "public",
+        "final"
+      ],
+      "fields": [
+        {
+          "name": "name",
+          "type": "String",
+          "modifiers": [
+            "private",
+            "final"
+          ],
+          "initializer": null
+        },
+        {
+          "name": "sizeBytes",
+          "type": "long",
+          "modifiers": [
+            "private",
+            "final"
+          ],
+          "initializer": null
+        }
+      ],
+      "methods": [
+        {
+          "name": "FileElement",
+          "constructor": true,
+          "returnType": null,
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "name",
+              "type": "String"
+            },
+            {
+              "name": "sizeBytes",
+              "type": "long"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "getName",
+          "constructor": false,
+          "returnType": "String",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "getSizeBytes",
+          "constructor": false,
+          "returnType": "long",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "accept",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [
+            {
+              "name": "visitor",
+              "type": "FileSystemVisitor"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        }
+      ],
+      "sha256": "ab118ad6f00a1d587fa44c6db1058d2d6cdc73403e4ca6fba90f6f97fc0ae7d7"
+    },
+    {
+      "name": "FileSystemElement",
+      "kind": "INTERFACE",
+      "package": "edu.aitu.visitor.model",
+      "source": "src/main/java/edu/aitu/visitor/model/FileSystemElement.java",
+      "modifiers": [
+        "public"
+      ],
+      "fields": [],
+      "methods": [
+        {
+          "name": "getName",
+          "constructor": false,
+          "returnType": "String",
+          "modifiers": [
+            "abstract",
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "getChildren",
+          "constructor": false,
+          "returnType": "List<FileSystemElement>",
+          "modifiers": [
+            "default",
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "accept",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "abstract",
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "visitor",
+              "type": "FileSystemVisitor"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        }
+      ],
+      "sha256": "fe24b5ae1e0056b8b8a4fe898fd59269061cc1b3889223a7a5e7b70819c0e913"
+    },
+    {
+      "name": "FileSystemVisitor",
+      "kind": "INTERFACE",
+      "package": "edu.aitu.visitor.operation",
+      "source": "src/main/java/edu/aitu/visitor/operation/FileSystemVisitor.java",
+      "modifiers": [
+        "public"
+      ],
+      "fields": [],
+      "methods": [
+        {
+          "name": "visitFile",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "abstract",
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "file",
+              "type": "FileElement"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "visitDirectory",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "abstract",
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "directory",
+              "type": "DirectoryElement"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        }
+      ],
+      "sha256": "4281e2d01197bce52b0ee084c368994cfd332f4a38706c88ac0ae7f852cc5e86"
+    },
+    {
+      "name": "SearchVisitor",
+      "kind": "CLASS",
+      "package": "edu.aitu.visitor.operation",
+      "source": "src/main/java/edu/aitu/visitor/operation/SearchVisitor.java",
+      "modifiers": [
+        "public",
+        "final"
+      ],
+      "fields": [
+        {
+          "name": "suffix",
+          "type": "String",
+          "modifiers": [
+            "private",
+            "final"
+          ],
+          "initializer": null
+        },
+        {
+          "name": "matches",
+          "type": "List<String>",
+          "modifiers": [
+            "private",
+            "final"
+          ],
+          "initializer": "new ArrayList<>()"
+        }
+      ],
+      "methods": [
+        {
+          "name": "SearchVisitor",
+          "constructor": true,
+          "returnType": null,
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "suffix",
+              "type": "String"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "visitFile",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [
+            {
+              "name": "file",
+              "type": "FileElement"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "visitDirectory",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [
+            {
+              "name": "directory",
+              "type": "DirectoryElement"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "getMatches",
+          "constructor": false,
+          "returnType": "List<String>",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        }
+      ],
+      "sha256": "09e380758249e9de869d10e59c1562791c82c177f1166b981a53c5697ed5f4c1"
+    },
+    {
+      "name": "SizeCalculatorVisitor",
+      "kind": "CLASS",
+      "package": "edu.aitu.visitor.operation",
+      "source": "src/main/java/edu/aitu/visitor/operation/SizeCalculatorVisitor.java",
+      "modifiers": [
+        "public",
+        "final"
+      ],
+      "fields": [
+        {
+          "name": "totalBytes",
+          "type": "long",
+          "modifiers": [
+            "private"
+          ],
+          "initializer": null
+        }
+      ],
+      "methods": [
+        {
+          "name": "visitFile",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [
+            {
+              "name": "file",
+              "type": "FileElement"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "visitDirectory",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [
+            {
+              "name": "directory",
+              "type": "DirectoryElement"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "getTotalBytes",
+          "constructor": false,
+          "returnType": "long",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        }
+      ],
+      "sha256": "6eeb0e53158f0720d0183375e21733010a06381136e0b70a987b6a131a6c3970"
+    },
+    {
+      "name": "TextExportVisitor",
+      "kind": "CLASS",
+      "package": "edu.aitu.visitor.operation",
+      "source": "src/main/java/edu/aitu/visitor/operation/TextExportVisitor.java",
+      "modifiers": [
+        "public",
+        "final"
+      ],
+      "fields": [
+        {
+          "name": "lines",
+          "type": "List<String>",
+          "modifiers": [
+            "private",
+            "final"
+          ],
+          "initializer": "new ArrayList<>()"
+        }
+      ],
+      "methods": [
+        {
+          "name": "visitFile",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [
+            {
+              "name": "file",
+              "type": "FileElement"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "visitDirectory",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [
+            "@Override"
+          ],
+          "parameters": [
+            {
+              "name": "directory",
+              "type": "DirectoryElement"
+            }
+          ],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "getLines",
+          "constructor": false,
+          "returnType": "List<String>",
+          "modifiers": [
+            "public"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        }
+      ],
+      "sha256": "dcaf07cb309cc68c39ab740f10167cf913b59f697161cf1e584045decd961a1d"
+    },
+    {
+      "name": "FileSystemWalker",
+      "kind": "CLASS",
+      "package": "edu.aitu.visitor.traversal",
+      "source": "src/main/java/edu/aitu/visitor/traversal/FileSystemWalker.java",
+      "modifiers": [
+        "public",
+        "final"
+      ],
+      "fields": [],
+      "methods": [
+        {
+          "name": "FileSystemWalker",
+          "constructor": true,
+          "returnType": null,
+          "modifiers": [
+            "private"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "walk",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [
+            "public",
+            "static"
+          ],
+          "annotations": [],
+          "parameters": [
+            {
+              "name": "element",
+              "type": "FileSystemElement"
+            },
+            {
+              "name": "visitor",
+              "type": "FileSystemVisitor"
+            }
+          ],
+          "throws": [],
+          "locals": [
+            {
+              "name": "child",
+              "type": "FileSystemElement",
+              "line": 15
+            }
+          ]
+        }
+      ],
+      "sha256": "971dc83a6460fb15166d0906f35e8d4bb67fc290a4edf69661eccaad6e14e60e"
+    },
+    {
+      "name": "VisitorTest",
+      "kind": "CLASS",
+      "package": "edu.aitu.visitor",
+      "source": "src/test/java/edu/aitu/visitor/VisitorTest.java",
+      "modifiers": [],
+      "fields": [],
+      "methods": [
+        {
+          "name": "sizeOfNestedTree",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "SizeCalculatorVisitor",
+              "line": 19
+            }
+          ]
+        },
+        {
+          "name": "searchFindsTextFiles",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "SearchVisitor",
+              "line": 26
+            }
+          ]
+        },
+        {
+          "name": "emptyDirectoryHasZeroSize",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "SizeCalculatorVisitor",
+              "line": 33
+            }
+          ]
+        },
+        {
+          "name": "zeroByteFileContributesZero",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "SizeCalculatorVisitor",
+              "line": 40
+            }
+          ]
+        },
+        {
+          "name": "negativeSizeRejected",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "missingNameRejected",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "missingTreeRejected",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "missingVisitorRejected",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        },
+        {
+          "name": "childrenAreUnmodifiable",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "directory",
+              "type": "DirectoryElement",
+              "line": 69
+            }
+          ]
+        },
+        {
+          "name": "constructorCopiesChildren",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "children",
+              "type": "List<FileSystemElement>",
+              "line": 76
+            },
+            {
+              "name": "directory",
+              "type": "DirectoryElement",
+              "line": 78
+            }
+          ]
+        },
+        {
+          "name": "searchResultsAreSnapshots",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "SearchVisitor",
+              "line": 85
+            },
+            {
+              "name": "snapshot",
+              "type": "List<String>",
+              "line": 87
+            }
+          ]
+        },
+        {
+          "name": "nullChildRejected",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "children",
+              "type": "List<FileSystemElement>",
+              "line": 95
+            }
+          ]
+        },
+        {
+          "name": "visitorStatesAreIndependent",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "root",
+              "type": "DirectoryElement",
+              "line": 102
+            },
+            {
+              "name": "first",
+              "type": "SizeCalculatorVisitor",
+              "line": 103
+            },
+            {
+              "name": "second",
+              "type": "SizeCalculatorVisitor",
+              "line": 104
+            }
+          ]
+        },
+        {
+          "name": "overflowIsReported",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "root",
+              "type": "DirectoryElement",
+              "line": 114
+            }
+          ]
+        },
+        {
+          "name": "parallelMatchesSequential",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [
+            "Exception"
+          ],
+          "locals": []
+        },
+        {
+          "name": "repeatedParallelRunsStayIndependent",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [
+            "Exception"
+          ],
+          "locals": [
+            {
+              "name": "root",
+              "type": "DirectoryElement",
+              "line": 128
+            },
+            {
+              "name": "run",
+              "type": "int",
+              "line": 129
+            }
+          ]
+        },
+        {
+          "name": "directoryAcceptOnlyDispatches",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "SizeCalculatorVisitor",
+              "line": 137
+            }
+          ]
+        },
+        {
+          "name": "exportContainsAllElements",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "TextExportVisitor",
+              "line": 144
+            }
+          ]
+        },
+        {
+          "name": "exportResultsAreSnapshots",
+          "constructor": false,
+          "returnType": "void",
+          "modifiers": [],
+          "annotations": [
+            "@Test"
+          ],
+          "parameters": [],
+          "throws": [],
+          "locals": [
+            {
+              "name": "visitor",
+              "type": "TextExportVisitor",
+              "line": 160
+            },
+            {
+              "name": "snapshot",
+              "type": "List<String>",
+              "line": 162
+            }
+          ]
+        },
+        {
+          "name": "sampleTree",
+          "constructor": false,
+          "returnType": "DirectoryElement",
+          "modifiers": [
+            "private",
+            "static"
+          ],
+          "annotations": [],
+          "parameters": [],
+          "throws": [],
+          "locals": []
+        }
+      ],
+      "sha256": "7f721f89d31b5bf08bb74e5f4e377693a703f005b7ed6f2f04ef991a7560f88e"
+    }
+  ],
+  "counts": {
+    "classes": 9,
+    "interfaces": 2,
+    "fields": 8,
+    "methods": 48,
+    "explicit_constructors": 6,
+    "local_declarations": 33
+  },
+  "scope": "All authored Java types under src, including VisitorTest. Library types and implicit constructors are excluded.",
+  "realizations": [
+    [
+      "FileElement",
+      "FileSystemElement"
+    ],
+    [
+      "DirectoryElement",
+      "FileSystemElement"
+    ],
+    [
+      "SizeCalculatorVisitor",
+      "FileSystemVisitor"
+    ],
+    [
+      "SearchVisitor",
+      "FileSystemVisitor"
+    ],
+    [
+      "TextExportVisitor",
+      "FileSystemVisitor"
+    ]
+  ],
+  "dependencies": [
+    [
+      "FileSystemDemo",
+      "ParallelAnalysis"
+    ],
+    [
+      "FileSystemDemo",
+      "DirectoryElement"
+    ],
+    [
+      "FileSystemDemo",
+      "FileElement"
+    ],
+    [
+      "FileSystemDemo",
+      "FileSystemElement"
+    ],
+    [
+      "FileSystemDemo",
+      "SearchVisitor"
+    ],
+    [
+      "FileSystemDemo",
+      "SizeCalculatorVisitor"
+    ],
+    [
+      "FileSystemDemo",
+      "TextExportVisitor"
+    ],
+    [
+      "FileSystemDemo",
+      "FileSystemWalker"
+    ],
+    [
+      "ParallelAnalysis",
+      "FileSystemElement"
+    ],
+    [
+      "ParallelAnalysis",
+      "SearchVisitor"
+    ],
+    [
+      "ParallelAnalysis",
+      "SizeCalculatorVisitor"
+    ],
+    [
+      "ParallelAnalysis",
+      "FileSystemWalker"
+    ],
+    [
+      "DirectoryElement",
+      "FileSystemVisitor"
+    ],
+    [
+      "FileElement",
+      "FileSystemVisitor"
+    ],
+    [
+      "FileSystemElement",
+      "FileSystemVisitor"
+    ],
+    [
+      "FileSystemVisitor",
+      "DirectoryElement"
+    ],
+    [
+      "FileSystemVisitor",
+      "FileElement"
+    ],
+    [
+      "SearchVisitor",
+      "DirectoryElement"
+    ],
+    [
+      "SearchVisitor",
+      "FileElement"
+    ],
+    [
+      "SizeCalculatorVisitor",
+      "DirectoryElement"
+    ],
+    [
+      "SizeCalculatorVisitor",
+      "FileElement"
+    ],
+    [
+      "TextExportVisitor",
+      "DirectoryElement"
+    ],
+    [
+      "TextExportVisitor",
+      "FileElement"
+    ],
+    [
+      "FileSystemWalker",
+      "FileSystemElement"
+    ],
+    [
+      "FileSystemWalker",
+      "FileSystemVisitor"
+    ],
+    [
+      "VisitorTest",
+      "ParallelAnalysis"
+    ],
+    [
+      "VisitorTest",
+      "DirectoryElement"
+    ],
+    [
+      "VisitorTest",
+      "FileElement"
+    ],
+    [
+      "VisitorTest",
+      "FileSystemElement"
+    ],
+    [
+      "VisitorTest",
+      "SearchVisitor"
+    ],
+    [
+      "VisitorTest",
+      "SizeCalculatorVisitor"
+    ],
+    [
+      "VisitorTest",
+      "TextExportVisitor"
+    ],
+    [
+      "VisitorTest",
+      "FileSystemWalker"
+    ]
+  ]
+}

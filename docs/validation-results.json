@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-31",
+  "jdk": "17.0.20.1",
+  "tests": 19,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "demo_lines": 41,
+  "tree_files": 6,
+  "tree_directories": 3,
+  "total_size_bytes": 13000,
+  "matches": [
+    "notes.txt",
+    "todo.txt"
+  ],
+  "text_export_entries": 9,
+  "identical_jar_runs": 3,
+  "windows_launcher_passed": true,
+  "download_with_spaces_and_auto_jdk_passed": true,
+  "type_check_chains_absent": true
+}

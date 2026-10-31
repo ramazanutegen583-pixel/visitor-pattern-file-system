@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="401.9" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 401" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="401.9"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-401)" style="clip-path: url(#clip)">
+		<g transform="">
+			<path d="M 287,387.9 L 287,397.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<path d="M 479,387.9 L 479,397.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<path d="M 479,397.9 L 95,397.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<path d="M 95,397.9 L 95,387.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<polygon points="95 387.9, 92 393.0962, 98 393.0962" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<polygon points="479 291.5, 476 286.5, 479 281.5, 482 286.5" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 479,281.5 L 479,267.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<path d="M 479,267.9 L 95,267.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<path d="M 95,267.9 L 95,333.3 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<path d="M 95,333.3 L 98,328.103848 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<path d="M 95,333.3 L 92,328.103848 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="100" y="321.29999999999995" style="font-family: Arial; font-size: 7px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,642) scale(1,-1)">0..*</text>
+			<path d="M 196,222.5 L 191,222.5 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<path d="M 196,107.5 L 191,107.5 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<path d="M 479,169.7 L 479,151.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<path d="M 479,151.9 L 191,151.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<path d="M 191,107.5 L 191,234.2 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<path d="M 191,234.2 L 186,234.2 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; stroke-dasharray: 3, 2;"/>
+			<polygon points="186 234.2, 191.1962 237.2, 191.1962 231.2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="4" y="333.29999999999995" width="182" height="54.60000000000002" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+			<text x="29.59418945312501" y="376.9" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,753) scale(1,-1)">FileSystemElement &lt;&lt;interface&gt;&gt;</text>
+			<path d="M 4,370.9 L 186,370.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="9" y="360.9" style="font-family: Arial-Italic; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,721) scale(1,-1)">+ getName(): String</text>
+			<text x="9" y="351.7" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,703) scale(1,-1)">+ getChildren(): List&lt;FileSystemElement&gt;</text>
+			<text x="9" y="342.5" style="font-family: Arial-Italic; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,685) scale(1,-1)">+ accept(visitor: FileSystemVisitor): void</text>
+			<rect x="196" y="300.7" width="182" height="87.19999999999999" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="244.84287109375" y="376.9" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,753) scale(1,-1)">FileElement &lt;&lt;final&gt;&gt;</text>
+			<path d="M 196,370.9 L 378,370.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="201" y="360.9" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,721) scale(1,-1)">- name: String</text>
+			<text x="201" y="351.7" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,703) scale(1,-1)">- sizeBytes: long</text>
+			<path d="M 196,347.5 L 378,347.5 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="201" y="337.5" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,675) scale(1,-1)">+ FileElement(name: String, sizeBytes: long)</text>
+			<text x="201" y="328.29999999999995" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,656) scale(1,-1)">+ getName(): String</text>
+			<text x="201" y="319.09999999999997" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,638) scale(1,-1)">+ getSizeBytes(): long</text>
+			<text x="201" y="309.9" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,619) scale(1,-1)">+ accept(visitor: FileSystemVisitor): void</text>
+			<rect x="388" y="291.5" width="182" height="96.39999999999998" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="425.90419921875" y="376.9" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,753) scale(1,-1)">DirectoryElement &lt;&lt;final&gt;&gt;</text>
+			<path d="M 388,370.9 L 570,370.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="360.9" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,721) scale(1,-1)">- name: String</text>
+			<text x="393" y="351.7" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,703) scale(1,-1)">- children: List&lt;FileSystemElement&gt;</text>
+			<path d="M 388,347.5 L 570,347.5 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="337.5" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,675) scale(1,-1)">+ DirectoryElement(name: String, children:</text>
+			<text x="393" y="328.29999999999995" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,656) scale(1,-1)">List&lt;FileSystemElement&gt;)</text>
+			<text x="393" y="319.09999999999997" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,638) scale(1,-1)">+ getName(): String</text>
+			<text x="393" y="309.9" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,619) scale(1,-1)">+ getChildren(): List&lt;FileSystemElement&gt;</text>
+			<text x="393" y="300.69999999999993" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,601) scale(1,-1)">+ accept(visitor: FileSystemVisitor): void</text>
+			<rect x="580" y="176.89999999999998" width="176" height="211.0" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(95%,96%,97%); fill-rule: evenodd;"/>
+			<text x="628.803759765625" y="376.9" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,753) scale(1,-1)">VisitorTest &lt;&lt;test&gt;&gt;</text>
+			<path d="M 580,370.9 L 756,370.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="585" y="360.9" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,721) scale(1,-1)">~ sizeOfNestedTree(): void</text>
+			<text x="585" y="351.7" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,703) scale(1,-1)">~ searchFindsTextFiles(): void</text>
+			<text x="585" y="342.5" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,685) scale(1,-1)">~ emptyDirectoryHasZeroSize(): void</text>
+			<text x="585" y="333.29999999999995" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,666) scale(1,-1)">~ zeroByteFileContributesZero(): void</text>
+			<text x="585" y="324.09999999999997" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,648) scale(1,-1)">~ negativeSizeRejected(): void</text>
+			<text x="585" y="314.9" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,629) scale(1,-1)">~ missingNameRejected(): void</text>
+			<text x="585" y="305.69999999999993" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,611) scale(1,-1)">~ missingTreeRejected(): void</text>
+			<text x="585" y="296.49999999999994" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,592) scale(1,-1)">~ missingVisitorRejected(): void</text>
+			<text x="585" y="287.29999999999995" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,574) scale(1,-1)">~ childrenAreUnmodifiable(): void</text>
+			<text x="585" y="278.09999999999997" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,556) scale(1,-1)">~ constructorCopiesChildren(): void</text>
+			<text x="585" y="268.9" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,537) scale(1,-1)">~ searchResultsAreSnapshots(): void</text>
+			<text x="585" y="259.69999999999993" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,519) scale(1,-1)">~ nullChildRejected(): void</text>
+			<text x="585" y="250.49999999999997" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,500) scale(1,-1)">~ visitorStatesAreIndependent(): void</text>
+			<text x="585" y="241.29999999999998" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,482) scale(1,-1)">~ overflowIsReported(): void</text>
+			<text x="585" y="232.1" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,464) scale(1,-1)">~ parallelMatchesSequential(): void</text>
+			<text x="585" y="222.9" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,445) scale(1,-1)">~ repeatedParallelRunsStayIndependent(): void</text>
+			<text x="585" y="213.70000000000002" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,427) scale(1,-1)">~ directoryAcceptOnlyDispatches(): void</text>
+			<text x="585" y="204.50000000000003" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,409) scale(1,-1)">~ exportContainsAllElements(): void</text>
+			<text x="585" y="195.30000000000004" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,390) scale(1,-1)">~ exportResultsAreSnapshots(): void</text>
+			<text x="585" y="186.10000000000005" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,372) scale(1,-1)">- sampleTree(): DirectoryElement</text>
+			<path d="M 585,185.1 L 700.29375,185.1 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<rect x="4" y="211.49999999999997" width="182" height="45.400000000000006" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+			<text x="32.78530273437501" y="245.89999999999998" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,491) scale(1,-1)">FileSystemVisitor &lt;&lt;interface&gt;&gt;</text>
+			<path d="M 4,239.9 L 186,239.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="9" y="229.89999999999998" style="font-family: Arial-Italic; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,459) scale(1,-1)">+ visitFile(file: FileElement): void</text>
+			<text x="9" y="220.7" style="font-family: Arial-Italic; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,441) scale(1,-1)">+ visitDirectory(directory: DirectoryElement): void</text>
+			<rect x="196" y="188.09999999999997" width="182" height="68.80000000000001" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="226.84331054687502" y="245.89999999999998" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,491) scale(1,-1)">SizeCalculatorVisitor &lt;&lt;final&gt;&gt;</text>
+			<path d="M 196,239.9 L 378,239.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="201" y="229.89999999999998" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,459) scale(1,-1)">- totalBytes: long</text>
+			<path d="M 196,225.7 L 378,225.7 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="201" y="215.7" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,431) scale(1,-1)">+ visitFile(file: FileElement): void</text>
+			<text x="201" y="206.5" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,413) scale(1,-1)">+ visitDirectory(directory: DirectoryElement): void</text>
+			<text x="201" y="197.3" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,394) scale(1,-1)">+ getTotalBytes(): long</text>
+			<rect x="388" y="169.7" width="182" height="87.19999999999999" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="433.421533203125" y="245.89999999999998" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,491) scale(1,-1)">SearchVisitor &lt;&lt;final&gt;&gt;</text>
+			<path d="M 388,239.9 L 570,239.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="229.89999999999998" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,459) scale(1,-1)">- suffix: String</text>
+			<text x="393" y="220.7" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,441) scale(1,-1)">- matches: List&lt;String&gt;</text>
+			<path d="M 388,216.5 L 570,216.5 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="206.5" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,413) scale(1,-1)">+ SearchVisitor(suffix: String)</text>
+			<text x="393" y="197.3" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,394) scale(1,-1)">+ visitFile(file: FileElement): void</text>
+			<text x="393" y="188.10000000000002" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,376) scale(1,-1)">+ visitDirectory(directory: DirectoryElement): void</text>
+			<text x="393" y="178.90000000000003" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,357) scale(1,-1)">+ getMatches(): List&lt;String&gt;</text>
+			<rect x="4" y="87.29999999999998" width="182" height="54.599999999999994" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="40.761083984375006" y="130.89999999999998" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,261) scale(1,-1)">FileSystemWalker &lt;&lt;final&gt;&gt;</text>
+			<path d="M 4,124.9 L 186,124.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="9" y="114.89999999999998" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,229) scale(1,-1)">- FileSystemWalker()</text>
+			<text x="9" y="105.69999999999999" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,211) scale(1,-1)">+ walk(element: FileSystemElement, visitor:</text>
+			<path d="M 9,104.7 L 160.064063,104.7 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="9" y="96.5" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,193) scale(1,-1)">FileSystemVisitor): void</text>
+			<path d="M 9,95.5 L 90.484863,95.5 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<rect x="4" y="16.69999999999996" width="182" height="54.599999999999994" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="44.40263671875001" y="60.299999999999955" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,120) scale(1,-1)">ParallelAnalysis &lt;&lt;final&gt;&gt;</text>
+			<path d="M 4,54.3 L 186,54.3 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="9" y="44.299999999999955" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,88) scale(1,-1)">- ParallelAnalysis()</text>
+			<text x="9" y="35.099999999999966" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,70) scale(1,-1)">+ analyze(root: FileSystemElement, suffix:</text>
+			<path d="M 9,34.1 L 154.872949,34.1 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="9" y="25.899999999999977" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,51) scale(1,-1)">String): List&lt;String&gt;</text>
+			<path d="M 9,24.9 L 77.931738,24.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<rect x="196" y="73.09999999999998" width="182" height="68.8" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="233.681982421875" y="130.89999999999998" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,261) scale(1,-1)">TextExportVisitor &lt;&lt;final&gt;&gt;</text>
+			<path d="M 196,124.9 L 378,124.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="201" y="114.89999999999998" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,229) scale(1,-1)">- lines: List&lt;String&gt;</text>
+			<path d="M 196,110.7 L 378,110.7 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="201" y="100.69999999999999" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,201) scale(1,-1)">+ visitFile(file: FileElement): void</text>
+			<text x="201" y="91.5" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,183) scale(1,-1)">+ visitDirectory(directory: DirectoryElement): void</text>
+			<text x="201" y="82.30000000000001" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,164) scale(1,-1)">+ getLines(): List&lt;String&gt;</text>
+			<rect x="388" y="32.09999999999998" width="182" height="109.8" rx="2" ry="2" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="423.85419921875" y="130.89999999999998" style="font-family: Arial-Bold; font-size: 8.2px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,261) scale(1,-1)">FileSystemDemo &lt;&lt;Client&gt;&gt;</text>
+			<path d="M 388,124.9 L 570,124.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="114.89999999999998" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,229) scale(1,-1)">- FileSystemDemo()</text>
+			<text x="393" y="105.69999999999999" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,211) scale(1,-1)">+ main(args: String[]): void</text>
+			<path d="M 393,104.7 L 484.684277,104.7 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="96.5" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,193) scale(1,-1)">- createSampleTree(): DirectoryElement</text>
+			<path d="M 393,95.5 L 531.274805,95.5 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="87.30000000000001" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,174) scale(1,-1)">- showSize(root: FileSystemElement): void</text>
+			<path d="M 393,86.3 L 539.946973,86.3 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="78.10000000000002" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,156) scale(1,-1)">- showSearch(root: FileSystemElement, suffix:</text>
+			<path d="M 393,77.1 L 552.95332,77.1 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="68.90000000000003" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,137) scale(1,-1)">String): void</text>
+			<path d="M 393,67.9 L 434.616504,67.9 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="59.700000000000045" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,119) scale(1,-1)">- showParallelAnalysis(root: FileSystemElement):</text>
+			<path d="M 393,58.7 L 563.35459,58.7 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="50.50000000000006" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,101) scale(1,-1)">void</text>
+			<path d="M 393,49.5 L 407.308887,49.5 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="393" y="41.30000000000007" style="font-family: Arial; font-size: 7.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,82) scale(1,-1)">- showTextExport(root: FileSystemElement): void</text>
+			<path d="M 393,40.3 L 562.48623,40.3 Z" style="stroke: rgb(33%,45%,54%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<text x="585" y="163.89999999999998" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,327) scale(1,-1)">+ public; - private; ~ package visibility.</text>
+			<text x="585" y="155.79999999999998" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,311) scale(1,-1)">Underlined: static. Italic: abstract.</text>
+			<text x="585" y="147.7" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,295) scale(1,-1)">Application classes are public final.</text>
+			<text x="585" y="139.59999999999997" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,279) scale(1,-1)">getChildren() in the element interface has a default</text>
+			<text x="585" y="131.5" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,263) scale(1,-1)">body.</text>
+			<text x="585" y="123.39999999999998" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,246) scale(1,-1)">Other dependencies:</text>
+			<text x="585" y="115.29999999999995" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,230) scale(1,-1)">Demo uses all elements and visitors, the walker and</text>
+			<text x="585" y="107.19999999999999" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,214) scale(1,-1)">ParallelAnalysis.</text>
+			<text x="585" y="99.09999999999997" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,198) scale(1,-1)">ParallelAnalysis uses the walker and independent</text>
+			<text x="585" y="91.0" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,182) scale(1,-1)">size/search visitors.</text>
+			<text x="585" y="82.89999999999998" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,165) scale(1,-1)">Walker uses both interfaces.</text>
+			<text x="585" y="74.79999999999995" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,149) scale(1,-1)">accept uses FileSystemVisitor; visits receive concrete</text>
+			<text x="585" y="66.69999999999999" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,133) scale(1,-1)">elements.</text>
+			<text x="585" y="58.599999999999966" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,117) scale(1,-1)">Tests use concrete elements, visitors, walker and</text>
+			<text x="585" y="50.5" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,101) scale(1,-1)">ParallelAnalysis.</text>
+			<text x="585" y="42.39999999999998" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,84) scale(1,-1)">9 classes, 2 interfaces, 8 fields, 48 methods, 6 explicit</text>
+			<text x="585" y="34.299999999999955" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,68) scale(1,-1)">constructors.</text>
+			<text x="585" y="26.19999999999999" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,52) scale(1,-1)">Full dependency arrows are in the editable PlantUML</text>
+			<text x="585" y="18.100000000000023" style="font-family: Arial; font-size: 6.8px;fill: rgb(9%,18%,27%); stroke:none;" transform="translate(0,36) scale(1,-1)">source.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,133 @@
+@startuml
+skinparam classAttributeIconSize 0
+title File System Visitor Complete UML
+class FileSystemDemo <<final>> {
+  - FileSystemDemo()
+  {static} + main(args: String[]): void
+  {static} - createSampleTree(): DirectoryElement
+  {static} - showSize(root: FileSystemElement): void
+  {static} - showSearch(root: FileSystemElement, suffix: String): void
+  {static} - showParallelAnalysis(root: FileSystemElement): void
+  {static} - showTextExport(root: FileSystemElement): void
+}
+class ParallelAnalysis <<final>> {
+  - ParallelAnalysis()
+  {static} + analyze(root: FileSystemElement, suffix: String): List<String>
+}
+class DirectoryElement <<final>> {
+  - name: String
+  - children: List<FileSystemElement>
+  + DirectoryElement(name: String, children: List<FileSystemElement>)
+  + getName(): String
+  + getChildren(): List<FileSystemElement>
+  + accept(visitor: FileSystemVisitor): void
+}
+class FileElement <<final>> {
+  - name: String
+  - sizeBytes: long
+  + FileElement(name: String, sizeBytes: long)
+  + getName(): String
+  + getSizeBytes(): long
+  + accept(visitor: FileSystemVisitor): void
+}
+interface FileSystemElement {
+  {abstract} + getName(): String
+  + getChildren(): List<FileSystemElement>
+  {abstract} + accept(visitor: FileSystemVisitor): void
+}
+interface FileSystemVisitor {
+  {abstract} + visitFile(file: FileElement): void
+  {abstract} + visitDirectory(directory: DirectoryElement): void
+}
+class SearchVisitor <<final>> {
+  - suffix: String
+  - matches: List<String>
+  + SearchVisitor(suffix: String)
+  + visitFile(file: FileElement): void
+  + visitDirectory(directory: DirectoryElement): void
+  + getMatches(): List<String>
+}
+class SizeCalculatorVisitor <<final>> {
+  - totalBytes: long
+  + visitFile(file: FileElement): void
+  + visitDirectory(directory: DirectoryElement): void
+  + getTotalBytes(): long
+}
+class TextExportVisitor <<final>> {
+  - lines: List<String>
+  + visitFile(file: FileElement): void
+  + visitDirectory(directory: DirectoryElement): void
+  + getLines(): List<String>
+}
+class FileSystemWalker <<final>> {
+  - FileSystemWalker()
+  {static} + walk(element: FileSystemElement, visitor: FileSystemVisitor): void
+}
+class VisitorTest {
+  ~ sizeOfNestedTree(): void
+  ~ searchFindsTextFiles(): void
+  ~ emptyDirectoryHasZeroSize(): void
+  ~ zeroByteFileContributesZero(): void
+  ~ negativeSizeRejected(): void
+  ~ missingNameRejected(): void
+  ~ missingTreeRejected(): void
+  ~ missingVisitorRejected(): void
+  ~ childrenAreUnmodifiable(): void
+  ~ constructorCopiesChildren(): void
+  ~ searchResultsAreSnapshots(): void
+  ~ nullChildRejected(): void
+  ~ visitorStatesAreIndependent(): void
+  ~ overflowIsReported(): void
+  ~ parallelMatchesSequential(): void
+  ~ repeatedParallelRunsStayIndependent(): void
+  ~ directoryAcceptOnlyDispatches(): void
+  ~ exportContainsAllElements(): void
+  ~ exportResultsAreSnapshots(): void
+  {static} - sampleTree(): DirectoryElement
+}
+FileElement ..|> FileSystemElement
+DirectoryElement ..|> FileSystemElement
+SizeCalculatorVisitor ..|> FileSystemVisitor
+SearchVisitor ..|> FileSystemVisitor
+TextExportVisitor ..|> FileSystemVisitor
+DirectoryElement o--> "0..*" FileSystemElement : children
+FileSystemDemo ..> ParallelAnalysis : uses
+FileSystemDemo ..> DirectoryElement : uses
+FileSystemDemo ..> FileElement : uses
+FileSystemDemo ..> FileSystemElement : uses
+FileSystemDemo ..> SearchVisitor : uses
+FileSystemDemo ..> SizeCalculatorVisitor : uses
+FileSystemDemo ..> TextExportVisitor : uses
+FileSystemDemo ..> FileSystemWalker : uses
+ParallelAnalysis ..> FileSystemElement : uses
+ParallelAnalysis ..> SearchVisitor : uses
+ParallelAnalysis ..> SizeCalculatorVisitor : uses
+ParallelAnalysis ..> FileSystemWalker : uses
+DirectoryElement ..> FileSystemVisitor : uses
+FileElement ..> FileSystemVisitor : uses
+FileSystemElement ..> FileSystemVisitor : uses
+FileSystemVisitor ..> DirectoryElement : uses
+FileSystemVisitor ..> FileElement : uses
+SearchVisitor ..> DirectoryElement : uses
+SearchVisitor ..> FileElement : uses
+SizeCalculatorVisitor ..> DirectoryElement : uses
+SizeCalculatorVisitor ..> FileElement : uses
+TextExportVisitor ..> DirectoryElement : uses
+TextExportVisitor ..> FileElement : uses
+FileSystemWalker ..> FileSystemElement : uses
+FileSystemWalker ..> FileSystemVisitor : uses
+VisitorTest ..> ParallelAnalysis : uses
+VisitorTest ..> DirectoryElement : uses
+VisitorTest ..> FileElement : uses
+VisitorTest ..> FileSystemElement : uses
+VisitorTest ..> SearchVisitor : uses
+VisitorTest ..> SizeCalculatorVisitor : uses
+VisitorTest ..> TextExportVisitor : uses
+VisitorTest ..> FileSystemWalker : uses
+legend bottom
++ public; - private; ~ package visibility
+Underlined static; italic abstract. getChildren in FileSystemElement is a default method.
+All declared fields, methods and explicit constructors; 9 classes and 2 interfaces.
+Throws clauses, annotations and locals are retained in code-inventory.json.
+endlegend
+@enduml

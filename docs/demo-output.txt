@@ -1,0 +1,41 @@
+============================================================
+FILE SYSTEM - VISITOR PATTERN DEMONSTRATION
+Sample: coursework, with 6 files and 3 directories.
+The sample is an in-memory model with fixed file sizes.
+============================================================
+
+1. SIZE CALCULATOR VISITOR
+Operation: sum the byte sizes of every file.
+Root: coursework
+Total size: 13000 bytes
+
+2. SEARCH VISITOR
+Operation: find file names ending with .txt
+Match: notes.txt
+Match: todo.txt
+Matches found: 2
+
+3. NEW OPERATION: TEXT EXPORT VISITOR
+This visitor was added without changing FileElement or DirectoryElement.
+DIR coursework
+FILE README.md (800 bytes)
+DIR documents
+FILE notes.txt (1200 bytes)
+FILE report.pdf (4800 bytes)
+FILE todo.txt (600 bytes)
+DIR images
+FILE diagram.png (2400 bytes)
+FILE archive.zip (3200 bytes)
+
+4. INDEPENDENT PARALLEL VISITORS
+Size: 13000 bytes
+Search .txt: notes.txt, todo.txt
+Two tasks, separate visitors, one immutable sample tree.
+
+DOUBLE DISPATCH
+1. walk() calls the actual element's accept(visitor).
+2. accept() calls visitFile(this) or visitDirectory(this).
+3. The actual visitor supplies the operation implementation.
+
+All operations used the same tree; the elements stayed unchanged.
+DEMONSTRATION COMPLETED SUCCESSFULLY
